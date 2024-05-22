@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="agecalc.css">
+    <title>Age calculator</title>
+</head>
+
+<body>
+    <header id="heading">AGE CALCULATOR</header>
+    <form id="container">
+        <div class="row">
+            <div class="column">
+               <label for="day">Date</label>
+              <div><input type="text" id="day" name="day" min="1" max="31" placeholder="enter date of birth" required></div>
+            </div>
+            <div class="column">
+                <label for="month">Month</label>
+               <div> <input type="number" id="month" name="month" min="1" max="12" required></div>
+            </div>
+            <div class="column">
+                <label for="year">Year</label>
+               <div> <input type="text" id="year" name="year" placeholder="enter year" required></div>
+            </div>
+        </div>
+        <button id="btn">Submit</button>
+        <button id="rst">Reset</button>
+        <div id="present-age"></div>
+    </form> 
+</body>
+<script src="agecalc.js"></script>
+
+</html>
