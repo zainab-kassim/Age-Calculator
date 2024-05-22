@@ -95,7 +95,12 @@ document.getElementById("container").addEventListener("submit", function (e) {
 });
 
 rst.addEventListener("click", function () {
-    window.location.reload(true)
+    year.value = '';
+    birth_month.value = '';
+    birth_day.value = '';
+    errorMessage.textContent = '';
+    document.getElementById("present-age").innerHTML = '';
+    btn.disabled = false;
 });
 
 
